@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy test</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cairo:wght@400;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF7EC;
+    --pink:#F08589;
+    --peach:#F9B09A;
+    --brown:#A97C53;
+    --dark:#5C3A21;
+    --dot:#E2D3BC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    min-height:100vh;
+    display:flex;align-items:center;justify-content:center;
+    background:
+      radial-gradient(var(--dot) 3px, transparent 3.5px) 0 0/34px 34px,
+      linear-gradient(160deg,#FCE4E6 0%,var(--cream) 50%,#FBE3D9 100%);
+    font-family:'Poppins',sans-serif;
+    color:var(--dark);
+    padding:24px 16px;
+  }
+  .card{
+    width:100%;max-width:560px;
+    background:rgba(251,247,236,.92);
+    border:3px solid var(--brown);
+    border-radius:28px;
+    outline:2px dashed var(--peach);
+    outline-offset:-12px;
+    padding:40px 28px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(92,58,33,.12);
+  }
+  .logo{width:100%;max-width:340px;height:auto;display:block;margin:0 auto 20px}
+  h1{
+    font-family:'Great Vibes',cursive;
+    font-weight:400;
+    font-size:clamp(2.6rem,9vw,3.6rem);
+    color:var(--pink);
+    line-height:1.1;
+  }
+  .ar{
+    font-family:'Cairo',sans-serif;
+    font-weight:600;
+    font-size:clamp(1.8rem,7vw,2.4rem);
+    color:var(--pink);
+    margin-top:6px;
+  }
+  .divider{
+    width:120px;height:0;margin:20px auto;
+    border-top:3px dotted var(--brown);
+  }
+  p{font-size:1rem;color:var(--brown);line-height:1.6}
+  p.ar-text{font-family:'Cairo',sans-serif;font-size:1.05rem;margin-top:6px}
+  footer{margin-top:28px;font-size:.8rem;color:var(--brown)}
+</style>
+</head>
+<body>
+  <main class="card">
+    <img class="logo" src="logo.png" alt="Logo">
+    <h1>Coming Soon</h1>
+    <div class="ar" dir="rtl" lang="ar">قريباً</div>
+    <div class="divider"></div>
+    <p>Something sweet is on its way.</p>
+    <p class="ar-text" dir="rtl" lang="ar">شيء جميل في الطريق إليكم</p>
+    <footer>© 2026 Joy test</footer>
+  </main>
+</body>
+</html>
